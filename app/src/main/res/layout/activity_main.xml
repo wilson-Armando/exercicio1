@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6E613C"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_num"
+        android:layout_width="341dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="23dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/insira_o_valor"
+        android:inputType=""
+        app:layout_constraintBottom_toTopOf="@+id/btn_converte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_converte"
+        android:layout_width="408dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/txt_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_num"
+        tools:text="converta" />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="127dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="468dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_converte"
+        tools:hint="Resultado" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="226dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="38dp"
+        android:gravity="center"
+        android:textColor="#C60E0E"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Exercício1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
